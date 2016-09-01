@@ -34,7 +34,7 @@ class StatusMixin(models.Model):
         (1, 'available'),
         (0, 'unavailable'),
     )
-    status = models.IntegerField(choices=STATUS_CHOICES)
+    status = models.IntegerField(choices=STATUS_CHOICES, default=1)
 
     class Meta:
         abstract = True
